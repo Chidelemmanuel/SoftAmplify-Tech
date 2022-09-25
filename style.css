@@ -101,44 +101,33 @@ span {
 
 .four {
     display: flex;
-    justify-content: space-between;
-    margin-left: 50px;
-    margin-right: 50px;
+    justify-content: space-around;
 }
 
 .first, .third {
     display: flex;
     background-color: #B70309;
-    width: 90px;
     padding: 10px;
     color: #fff;
 }
 
-.first h4, .third h4 {
+.first h4, .second h4, .third h4, #last h4 {
     color: #fff;
+    font-size: 15px;
 }
 
-.second {
+.second, #last {
     display: flex;
     text-align: center;
     background-color: #0A1D30;
-    width: 100px;
     padding: 10px;
-}
-
-#last {
-    display: flex;
-    text-align: center;
-    background-color: #0A1D30;
-    width: 80px;
-    padding: 10px;
-    color: #fff;
+    font-size: 10px;
 }
 
 .first-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .image > img {
@@ -154,6 +143,7 @@ h3 {
 .details {
     padding-top: 100px;
 }
+
 
 section {
     display: flex;
@@ -171,7 +161,6 @@ section h5 {
 section a {
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #0A1D30;
     width: 100px;
     color: #fff;
@@ -209,6 +198,7 @@ h4 {
 .second-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     border: 3px solid #0A1D30;
     flex-direction: column;
     background-color: #0A1D30;
@@ -332,7 +322,7 @@ footer {
     font-weight: bolder;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 320px) {
 
     .whole-page  {
         margin: 5px;
@@ -343,7 +333,7 @@ footer {
     }
 
     nav > img {
-        padding-left: 50px;
+        padding-left: 20px;
         width: 120px;
         height: 80px;
         float: left;
@@ -353,28 +343,30 @@ footer {
         margin: -15px;
     }
 
-    .container, .about {
-        margin: 10px;
-        margin-bottom: 0px;
+    .container {
+        text-align: center;
     }
 
-    #last {
-        width: 65px;
+    .container, .about {
+        margin: 5px;
+        margin-bottom: 0px;
+        font-size: 15px;
     }
 
     .four {
-        margin: 10px;
+        margin: 15px;
     }
 
     .first-container {
         display: flex;
         flex-direction: column;
-        margin: 10px;
+        margin: 5px;
         font-family: sans-serif;
+        border: 3px solid #B70309;
     }
 
     .image > img {
-        width: 330px;
+        width: 295px;
     }
 
     .details h4 {
@@ -398,8 +390,17 @@ footer {
         font-size: 14px;
     }
 
+    section a  {
+        width: 50%;
+    }
+
+    .second-container {
+        display: flex;
+        text-align: center;
+    }
+
     .image2 > img {
-        width: 300px;    
+        width: 290px;    
     }
 
     .space-link {
@@ -410,17 +411,8 @@ footer {
 
     .weekly > h4 {
         font-size: 10px;
-        font-family: sans-serif;
-    }
-
-    .weekly > h2 {
-        font-size: 20px;
-        font-family: sans-serif;
-    }
-
-    .last-text {
         text-align: center;
-        font-size: 13px;
+        font-size: 13px; 
         font-family: sans-serif;
     }
 
@@ -428,10 +420,33 @@ footer {
         text-align: center;
         font-size: 13px;
         font-family: sans-serif;
-    }
-}  
+    } 
 
-@media (min-width: 500px) {
+    .weekly > h2 {
+        font-size: 16px;
+        font-family: sans-serif;
+    }
+
+    .social a {
+        width: 33px;
+        height: 35px;
+    }
+
+    .last-text {
+        text-align: center;
+        font-size: 12px;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .end {
+        text-align: center;
+        font-size: 11px;
+        font-family: sans-serif;
+    } 
+} 
+
+/* @media (min-width: 500px) {
 
     .whole-page  {
         margin: 5px;
@@ -486,22 +501,22 @@ footer {
     .last-text {
         font-size: 13px;
     }
-}
+} */
 
-@media (min-width: 768px)  {
+/* @media (min-width: 768px)  {
     .second-container {
         text-align: center;
     }
-}
-
+} */
+/* 
 @media (min-width: 1024px) {
     .first-container {
         display: flex;
         flex-direction: row;
     }
-}
+} */
 
-@media (max-width: 1440px)  {
+/* @media (max-width: 1440px)  {
     .first-container {
         display: flex;
         flex-direction: row;
@@ -514,4 +529,4 @@ footer {
     .image2 > img {
         width: 400px;
     }
-}
+} */
