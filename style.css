@@ -127,7 +127,6 @@ span {
 .first-container {
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
 }
 
 .image > img {
@@ -175,6 +174,8 @@ section a:hover {
     color: #B70309;
     background-color: transparent;
     border: 4px solid #0A1D30;
+    transform: scale(1.2);
+    transition: .3s;
 }
 
 h1 {
@@ -195,6 +196,85 @@ h4 {
     font-size: 20px;
 }
 
+.div-tag {
+    display: flex;
+    gap: 20px;
+    margin: 0px auto;
+}
+
+.div-tag i {
+    color: #B70309;
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.div-tag i:hover {
+    color: #0A1D30;
+}
+
+.tag {
+    color: #0A1D30;
+    text-align: center;
+    border-bottom: 3px solid #B70309;
+}
+
+.tag:hover {
+    color: #B70309;
+    border-bottom: 3px solid #0A1D30;
+}
+
+.speakers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.speaker-image {
+    padding-top: 20px;
+    width: 400px;
+    height: auto;
+}
+
+.first-div {
+    padding-top: 100px;
+    color: #0A1D30;
+    font-weight: bolder;
+}
+
+.microsoft > img{
+    width: 150px;
+}
+
+.name {
+    color: #0A1D30;
+}
+
+.mohamed-link {
+    display: flex;
+}
+
+.mohamed-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #0A1D30;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 25px; 
+    border-radius: 50%;
+    text-transform: sc;
+}
+
+.mohamed-link a:hover {
+    color: #B70309;
+    background-color: transparent;
+    border: 4px solid #0A1D30;
+    transform: scale(1.2);
+    transition: .3s;
+}
+
 .second-container {
     display: flex;
     justify-content: center;
@@ -205,12 +285,28 @@ h4 {
     margin-top: 25px;
 }
 
+.div {
+    display: flex;
+    gap: 20px;
+    margin: 0px auto;
+}
+
+.div i {
+    color: #B70309;
+    font-size: 50px;
+}
+
+.div i:hover {
+    color: #B70309;
+}
+
 h2 {
     text-align: center;
+    font-size: 50px;
     color: #fff;
 }
 
-.image2 > img {
+.imagee > img {
     width: 400px;
     height: auto;
     margin: 20px;
@@ -333,7 +429,6 @@ footer {
     }
 
     nav > img {
-        padding-left: 20px;
         width: 120px;
         height: 80px;
         float: left;
@@ -341,6 +436,10 @@ footer {
 
     nav ul li a {
         margin: -15px;
+    }
+
+    .first-text {
+        font-size: 15px;
     }
 
     .container {
@@ -354,7 +453,8 @@ footer {
     }
 
     .four {
-        margin: 15px;
+        justify-content: space-around;
+        margin: 5px;
     }
 
     .first-container {
@@ -362,7 +462,7 @@ footer {
         flex-direction: column;
         margin: 5px;
         font-family: sans-serif;
-        border: 3px solid #B70309;
+        text-align: center;
     }
 
     .image > img {
@@ -394,13 +494,54 @@ footer {
         width: 50%;
     }
 
-    .second-container {
+    .div-tag i {
+        font-size: 30px;
+        margin-top: 25px;
+    }
+
+    .tag {
+        font-size: 30px;
+    }
+
+    .speakers {
         display: flex;
+        flex-direction: column;
         text-align: center;
     }
 
-    .image2 > img {
-        width: 290px;    
+    .pic > img {
+        width: 295px;
+        margin: 7px;
+    }
+
+    .first-div{
+        text-align: center;
+    }
+
+    .mohamed-link {
+        justify-content: center;
+    }
+
+    .second-container {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    .div i {
+        margin-top: 15px;
+        font-size: 30px;
+    }
+
+    h2 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .imagee > img {
+        width: 280px;    
     }
 
     .space-link {
@@ -410,9 +551,8 @@ footer {
     }
 
     .weekly > h4 {
-        font-size: 10px;
+        font-size: 9px;
         text-align: center;
-        font-size: 13px; 
         font-family: sans-serif;
     }
 
@@ -434,7 +574,175 @@ footer {
 
     .last-text {
         text-align: center;
+        font-size: 10px;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .end {
+        text-align: center;
+        font-size: 11px;
+        font-family: sans-serif;
+    } 
+}  
+
+@media (max-width: 375px) {
+    .whole-page  {
+        margin: 5px;
+    }
+
+    nav {
         font-size: 12px;
+    }
+
+    nav > img {
+        width: 120px;
+        height: 80px;
+        float: left;
+    } 
+
+    nav ul li a {
+        margin: -15px;
+    }
+
+    .first-text {
+        font-size: 15px;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .container, .about {
+        margin: 5px;
+        margin-bottom: 0px;
+        font-size: 15px;
+    }
+
+    .four {
+        justify-content: space-around;
+        margin: 5px;
+    }
+
+    .first-container {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    .image > img {
+        width: 295px;
+    }
+
+    .details h4 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .details h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .details > h3 {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    section h5 {
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    section a  {
+        width: 50%;
+    }
+
+    .div-tag i {
+        font-size: 30px;
+        margin-top: 25px;
+    }
+
+    .tag {
+        font-size: 30px;
+    }
+
+    .speakers {
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    .pic > img {
+        width: 295px;
+        margin: 7px;
+    }
+
+    .first-div{
+        text-align: center;
+    }
+
+    .mohamed-link {
+        justify-content: center;
+    }
+
+    .second-container {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    .div i {
+        margin-top: 15px;
+        font-size: 30px;
+    }
+
+    h2 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .imagee > img {
+        width: 280px;
+    }
+
+    .space-link {
+        font-size: 11px;
+        padding: 5px;
+        font-family: sans-serif;
+    }
+
+    .weekly > h4 {
+        font-size: 9px;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    .end {
+        text-align: center;
+        font-size: 13px;
+        font-family: sans-serif;
+    } 
+
+    .weekly > h2 {
+        font-size: 16px;
+        font-family: cursive;
+    }
+
+    .social a {
+        width: 33px;
+        height: 35px;
+    }
+
+    .last-text {
+        text-align: center;
+        font-size: 10px;
         font-family: sans-serif;
         letter-spacing: 1px;
     }
@@ -445,88 +753,3 @@ footer {
         font-family: sans-serif;
     } 
 } 
-
-/* @media (min-width: 500px) {
-
-    .whole-page  {
-        margin: 5px;
-    }
-
-    .four {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .image > img {
-        width: 450px;
-    }
-
-    .first-container {
-        flex-direction: column;
-    }
-
-    .details h4 {
-        font-size: 42px;
-        text-align: center;
-    }
-
-    .details h1 {
-        font-size: 62px;
-        text-align: center;
-    }
-
-    .details > h3 {
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-
-    section h5 {
-        margin-bottom: 15px;
-        text-align: center;
-        font-size: 24px;
-    }
-
-    section a {
-        margin: 20px;
-    }
-
-    .image2 > img {
-        width: 450px;    
-    }
-
-    .weekly > h4 {
-        font-size: 16px;
-    }
-
-    .last-text {
-        font-size: 13px;
-    }
-} */
-
-/* @media (min-width: 768px)  {
-    .second-container {
-        text-align: center;
-    }
-} */
-/* 
-@media (min-width: 1024px) {
-    .first-container {
-        display: flex;
-        flex-direction: row;
-    }
-} */
-
-/* @media (max-width: 1440px)  {
-    .first-container {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .second-container {
-        flex-direction: column;
-    }
-
-    .image2 > img {
-        width: 400px;
-    }
-} */
