@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: cursive;
+    font-family: "cursive", sans-serif;
 }
 
 .whole-page {
@@ -19,39 +19,50 @@ nav {
     background-color: #0A1D30; 
     font-weight: bolder;
     letter-spacing: 1px;
+    margin: 0%;
+    padding: 0%;
+    font-size: 20px;
 } 
 
-nav > img {
-    width: 200px;
-    height: 105px;
-    border-radius: 50%;
+.picture > img {
+    width: 180px;
+    height: 110px;
+    margin-top: 4px;
+    border-radius: 20%;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-between;
     text-transform: capitalize;
-    text-decoration: none;
+    margin: 0;
+    padding: 0%;
 }
 
 nav ul li{
     color: #fff;
     list-style-type: none;
-    padding: 20px 25px;
-    margin: 10px;
+    margin: 50px;
+    padding: 0;
 }
 
 nav ul li a {
-    display: flex;
     color: #fff;
     text-decoration: none;
-    list-style-type: none;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, nav ul li :active {
     color: red;
     font-weight: bolder;
     border-bottom: 4px solid white;
+}
+
+.whole-page nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .first-text {
@@ -62,6 +73,7 @@ nav ul li a:hover {
     font-weight: bolder;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    margin-top: 120px;
 }
 
 span {
@@ -123,6 +135,14 @@ span {
     padding: 10px;
     font-size: 10px;
 }
+
+/* .background {
+    background: url(".//img/mockup.png");
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+} */
 
 .first-container {
     display: flex;
@@ -425,21 +445,43 @@ footer {
     }
 
     nav {
+        display: flex;
+        justify-content: space-around;
         font-size: 12px;
+        margin: 0%;
+        padding: 0%;
+       font-size: 13px;
     }
 
-    nav > img {
-        width: 120px;
-        height: 80px;
-        float: left;
-    } 
+    .picture > img {
+        width: 50px;
+        height: 60px;
+        margin-top: 4px;
+        border-radius: 20%;
+    }
+    
+    nav ul {
+        display: flex;
+        text-transform: capitalize;
+        margin-top: 10px;
+        padding: 0%;
+    }
+    
+    nav ul li{
+        color: #fff;
+        list-style-type: none;
+        margin: 10px;
+        padding: 0;
+    }
 
     nav ul li a {
-        margin: -15px;
+        display: flex;
+        margin: 10px;
     }
 
     .first-text {
         font-size: 15px;
+        margin-top: 70px;
     }
 
     .container {
@@ -467,6 +509,10 @@ footer {
 
     .image > img {
         width: 295px;
+    }
+
+    img {
+        border-radius: 8px;
     }
 
     .details h4 {
@@ -518,8 +564,16 @@ footer {
         text-align: center;
     }
 
+    .first-div h1 {
+        font-family: 'cursive', sans-serif;
+    }
+
     .mohamed-link {
         justify-content: center;
+    }
+
+    .microsoft > img {
+        border-radius: 70%;
     }
 
     .second-container {
@@ -592,20 +646,42 @@ footer {
     }
 
     nav {
+        display: flex;
+        justify-content: space-around;
         font-size: 12px;
+        margin: 0%;
+        padding: 0%;
+        font-size: 15px;
     }
 
-    nav > img {
-        width: 120px;
-        height: 80px;
-        float: left;
-    } 
+    .picture > img {
+        width: 50px;
+        height: 60px;
+        margin-top: 4px;
+        border-radius: 20%;
+    }
+    
+    nav ul {
+        display: flex;
+        text-transform: capitalize;
+        margin-top: 10px;
+        padding: 0%;
+    }
+    
+    nav ul li{
+        color: #fff;
+        list-style-type: none;
+        margin: 10px;
+        padding: 0;
+    }
 
     nav ul li a {
-        margin: -15px;
+        display: flex;
+        margin: 10px;
     }
 
     .first-text {
+        margin-top: 70px;
         font-size: 15px;
     }
 
@@ -634,6 +710,10 @@ footer {
 
     .image > img {
         width: 295px;
+    }
+
+    img {
+        border-radius: 8px;
     }
 
     .details h4 {
@@ -684,6 +764,10 @@ footer {
 
     .first-div{
         text-align: center;
+    }
+
+    .first-div h1 {
+        font-family: 'cursive', sans-serif;
     }
 
     .mohamed-link {
